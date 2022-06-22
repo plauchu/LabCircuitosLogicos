@@ -1,0 +1,141 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Cout",
+					"strict" : false
+				},
+				{
+					"name" : "SSEG_CM[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SSEG_CM[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SSEG_CM[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SSEG_CM[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SSEG_CS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SSEG_CS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SSEG_CS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SSEG_CS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SSEG_CS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SSEG_CS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SSEG_CS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Oper[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Oper[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Cin",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
