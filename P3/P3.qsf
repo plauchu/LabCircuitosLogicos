@@ -1,0 +1,91 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+# Date created = 18:32:41  September 21, 2021
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		P3_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE22F17C6
+set_global_assignment -name TOP_LEVEL_ENTITY P3
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:32:41  SEPTEMBER 21, 2021"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name VHDL_FILE "MPX_4-1.vhd"
+set_global_assignment -name VHDL_FILE "dec_2-4.vhd"
+set_global_assignment -name VHDL_FILE BCD_7seg.vhd
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name BDF_FILE P3.bdf
+set_global_assignment -name VHDL_FILE Generador.vhd
+set_global_assignment -name VHDL_FILE div_freq.vhd
+set_global_assignment -name VHDL_FILE cont2.vhd
+set_location_assignment PIN_R8 -to sys_clk
+set_location_assignment PIN_E1 -to sys_rst
+set_location_assignment PIN_E11 -to BCD[0]
+set_location_assignment PIN_B11 -to BCD[1]
+set_location_assignment PIN_C11 -to BCD[2]
+set_location_assignment PIN_D11 -to BCD[3]
+set_location_assignment PIN_A12 -to BCD[4]
+set_location_assignment PIN_B12 -to BCD[5]
+set_location_assignment PIN_D12 -to BCD[6]
+set_location_assignment PIN_T14 -to D0
+set_location_assignment PIN_T13 -to D1
+set_location_assignment PIN_R13 -to D2
+set_location_assignment PIN_T12 -to D3
+set_location_assignment PIN_T10 -to DIP4[0]
+set_location_assignment PIN_R11 -to DIP4[1]
+set_location_assignment PIN_P11 -to DIP4[2]
+set_location_assignment PIN_R10 -to DIP4[3]
+set_location_assignment PIN_N12 -to DIP3[0]
+set_location_assignment PIN_P9 -to DIP3[1]
+set_location_assignment PIN_N9 -to DIP3[2]
+set_location_assignment PIN_N11 -to DIP3[3]
+set_location_assignment PIN_L16 -to DIP2[0]
+set_location_assignment PIN_K16 -to DIP2[1]
+set_location_assignment PIN_R16 -to DIP2[2]
+set_location_assignment PIN_L15 -to DIP2[3]
+set_location_assignment PIN_P15 -to DIP1[0]
+set_location_assignment PIN_P16 -to DIP1[1]
+set_location_assignment PIN_R14 -to DIP1[2]
+set_location_assignment PIN_N16 -to DIP1[3]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
