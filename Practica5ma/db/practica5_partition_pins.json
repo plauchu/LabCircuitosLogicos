@@ -1,0 +1,153 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "C",
+					"strict" : false
+				},
+				{
+					"name" : "N",
+					"strict" : false
+				},
+				{
+					"name" : "Z",
+					"strict" : false
+				},
+				{
+					"name" : "SSEG_CM[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SSEG_CM[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SSEG_CM[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SSEG_CM[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SSEG_SC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SSEG_SC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SSEG_SC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SSEG_SC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SSEG_SC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SSEG_SC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SSEG_SC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "FS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "FS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "FS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "FS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
