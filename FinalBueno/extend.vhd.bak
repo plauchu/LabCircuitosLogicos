@@ -1,0 +1,22 @@
+library ieee ;
+use ieee . std_logic_1164 . all ;
+use ieee . numeric_std . all ;
+
+entity extend is
+port
+(
+	par: in std_logic_vector (5 downto 0); 
+	res : out std_logic_vector (15 downto 0)	
+);
+end extend;
+
+architecture extend of extend is
+
+begin
+
+	with par(5) select
+		res <= 
+		"00000000000" & par(4 downto 0) when '0',
+		"11111111111" & par(4 downto 0) when others;
+
+end extend ;

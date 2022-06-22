@@ -1,0 +1,77 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "OUTPUT1",
+					"strict" : false
+				},
+				{
+					"name" : "OUTPUT2",
+					"strict" : false
+				},
+				{
+					"name" : "OUTPUT3",
+					"strict" : false
+				},
+				{
+					"name" : "OUTPUT4",
+					"strict" : false
+				},
+				{
+					"name" : "sal[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sal[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sal[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sal[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sal[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sal[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sal[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
+					"strict" : false
+				},
+				{
+					"name" : "CLK_BTN",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
