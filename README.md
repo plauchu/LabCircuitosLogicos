@@ -1,2 +1,2 @@
 # LabCircuitosLogicos
-Práctica final para laboratorio de circuitos lógicos.
+Práctica final en VHDL para laboratorio de circuitos lógicos.
