@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Sep 14 08:29:37 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : generador
+Top-level Entity Name : generador
+Family : Cyclone IV E
+Total logic elements : 30
+    Total combinational functions : 30
+    Dedicated logic registers : 30
+Total registers : 30
+Total pins : 4
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
