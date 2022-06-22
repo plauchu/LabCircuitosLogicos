@@ -1,0 +1,125 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "D0",
+					"strict" : false
+				},
+				{
+					"name" : "D1",
+					"strict" : false
+				},
+				{
+					"name" : "D2",
+					"strict" : false
+				},
+				{
+					"name" : "D3",
+					"strict" : false
+				},
+				{
+					"name" : "BCD[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BCD[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BCD[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BCD[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BCD[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BCD[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BCD[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DIP4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sys_clk",
+					"strict" : false
+				},
+				{
+					"name" : "sys_rst",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
