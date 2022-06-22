@@ -1,0 +1,35 @@
+library ieee ;
+use ieee.std_logic_1164.all ;
+use ieee.numeric_std.all;
+
+library work;
+
+ENTITY branch_control is
+port (
+	PL, JB, BC, N, Z : in  STD_LOGIC;
+	oper             : out STD_LOGIC_VECTOR(1 DOWNTO 0)
+	);
+END branch_control;
+
+ARCHITECTURE bdf_type of branch_control is
+
+signal res: STD_LOGIC_VECTOR (1 DOWNTO 0) := "00";
+
+begin
+	res <= "01" when PL='1' and JB='0' and BC = '1' and N='1'
+				else "01" when PL='1' and JB='0' and BC = '0' and Z='1'
+				else "10" when PL='1' and JB='1'
+				else "00";
+
+	oper <= res;
+end bdf_type;
+		
+			
+
+	
+			
+		
+			
+			
+	
+		
