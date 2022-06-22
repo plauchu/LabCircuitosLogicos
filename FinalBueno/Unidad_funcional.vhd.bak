@@ -1,0 +1,141 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+
+Library work;
+
+-- se asignan las entradas y salidas del proyecto. Éstas son a las que
+-- se les asignarán pines con el pin planner.
+
+entity unidad_funcional is 
+	port
+	(
+			FS			:	in		std_logic_vector(3 downto 0);
+			A			:	in		std_logic_vector(15 downto 0);
+			B			:	in		std_logic_vector(15 downto 0);
+			C			:	out	std_logic;
+			N			:	out	std_logic;
+			Z			:	out	std_logic;
+			F			:	out	std_logic_vector(15 downto 0)		
+	);
+	
+End unidad_funcional;	
+
+architecture bdf_type of unidad_funcional is
+component arithmetic_circuit
+	PORT
+	(
+		C_in	: IN STD_LOGIC ;
+		A		: IN STD_LOGIC_VECTOR (15 DOWNTO 0);
+		B		: IN STD_LOGIC_VECTOR (15 DOWNTO 0);
+		S		: IN STD_LOGIC_VECTOR (1 DOWNTO 0);
+		C_out : OUT STD_LOGIC ;
+		G		: OUT STD_LOGIC_VECTOR (15 DOWNTO 0)
+		);
+END COMPONENT;
+
+COMPONENT logic_circuit
+	PORT
+	(
+		A		:	in std_logic_vector(15 downto 0);
+		B		:	in std_logic_vector(15 downto 0);
+		S		:	in std_logic_vector(1 downto 0);
+		G		:	out std_logic_vector(15 downto 0)
+		);
+END COMPONENT;
+
+COMPONENT shifter
+	PORT
+	(
+		B		:	in std_logic_vector(15 downto 0);
+		S		:	in std_logic_vector(1 downto 0);
+		G		:	out std_logic_vector(15 downto 0)
+		);
+END COMPONENT;
+
+COMPONENT Zero_detect
+	PORT
+	(
+		I		:	in std_logic_vector(15 downto 0);
+		Z		:	out std_logic
+		);
+END COMPONENT;
+
+COMPONENT mux_2_1
+	PORT
+	(
+		S : in std_logic;
+		I0 : in std_logic_vector(15 downto 0);
+		I1 : in std_logic_vector(15 downto 0);
+		Y 	: out std_logic_vector(15 downto 0)
+		);
+END COMPONENT;
+
+
+SIGNAL sal_logic		: STD_LOGIC_VECTOR (15 DOWNTO 0);
+SIGNAL sal_shifter	: STD_LOGIC_VECTOR (15 DOWNTO 0);
+SIGNAL c_out			: STD_LOGIC;
+SIGNAL sal_arith		: STD_LOGIC_VECTOR (15 DOWNTO 0);
+SIGNAL sal_mux1		: STD_LOGIC_VECTOR (15 DOWNTO 0);
+SIGNAL sal_mux2		: STD_LOGIC_VECTOR (15 DOWNTO 0);
+SIGNAL SO				: STD_LOGIC;
+
+BEGIN
+	
+	 SO<=FS(3) AND FS(2);
+	b2v_logic : logic_circuit
+	PORT MAP
+	(
+		S => FS(1 DOWNTO 0) ,
+		A => A ,
+		B => B ,
+		G => sal_logic 
+	);
+	
+	b2v_shifter: shifter
+	PORT MAP
+	(
+		S => FS (1 DOWNTO 0) ,
+		B => B ,
+		G => sal_shifter
+	);
+
+	b2v_arithmetic : arithmetic_circuit
+	PORT MAP
+	(
+		C_in => FS(0) ,
+		A => A ,
+		B => B ,
+		S => FS (2 DOWNTO 1) ,
+		C_out => C ,
+		G => sal_arith
+	);
+	
+	b2v_mux_2_1 : mux_2_1
+	PORT MAP
+	(
+		S => FS(3),
+		I0 => sal_arith,
+		I1 => sal_logic,
+		Y => sal_mux1
+	);
+	
+	b2v_mux : mux_2_1
+	PORT MAP
+	(
+		S => SO,
+		I0 => sal_mux1,
+		I1 => sal_shifter,
+		Y => sal_mux2
+	);
+	
+	b2v_zero : Zero_detect
+	PORT MAP
+	(
+		
+		I => sal_mux2,
+		Z => Z
+	);
+	
+	N <= sal_mux2(15);
+	F <= sal_mux2;
+END bdf_type;
