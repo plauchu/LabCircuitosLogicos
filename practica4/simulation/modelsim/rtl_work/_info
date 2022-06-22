@@ -1,0 +1,273 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rocco/Documents/practica4/simulation/modelsim
+Ebcd_7
+Z1 w1631554858
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:/Users/rocco/Documents/practica4/bcd_7/bcd_7.vhd
+Z6 FC:/Users/rocco/Documents/practica4/bcd_7/bcd_7.vhd
+l0
+L5
+VBNFzdChUBG^MFMlF07_@_3
+!s100 zMfg2klcfZOmeUbnjhTaV3
+Z7 OV;C;10.5b;63
+31
+Z8 !s110 1635272946
+!i10b 1
+Z9 !s108 1635272946.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/rocco/Documents/practica4/bcd_7/bcd_7.vhd|
+Z11 !s107 C:/Users/rocco/Documents/practica4/bcd_7/bcd_7.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavioural
+R2
+R3
+R4
+DEx4 work 5 bcd_7 0 22 BNFzdChUBG^MFMlF07_@_3
+l16
+L12
+VMBd9`M9LGSe8LDPZR@cjQ1
+!s100 6b:Do=zMR0:HmcN6PJIez1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ecircuito_aritmetico
+Z14 w1635271084
+R2
+R3
+R4
+R0
+Z15 8C:/Users/rocco/Documents/practica4/circuito_aritmetico/circuito_aritmetico.vhd
+Z16 FC:/Users/rocco/Documents/practica4/circuito_aritmetico/circuito_aritmetico.vhd
+l0
+L5
+Vca:>gcXWH><7oRWF@8>TE2
+!s100 W7mjF=<Dh;V2<bJ9SWCff1
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/rocco/Documents/practica4/circuito_aritmetico/circuito_aritmetico.vhd|
+Z18 !s107 C:/Users/rocco/Documents/practica4/circuito_aritmetico/circuito_aritmetico.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 19 circuito_aritmetico 0 22 ca:>gcXWH><7oRWF@8>TE2
+l31
+L19
+Vf7MWfM1Ec_e^RoG1nkho12
+!s100 V3Go6MaH0bHc8zmIlWi>Z1
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Pcomponentes
+R3
+R4
+w1634676383
+R0
+8C:/Users/rocco/Documents/practica4/componentes.vhd
+FC:/Users/rocco/Documents/practica4/componentes.vhd
+l0
+L4
+VlV7E8m3hZP`oScfF>7Z6F1
+!s100 <BRnS=>imSdW=e>IATTM@2
+R7
+31
+Z19 !s110 1635272947
+!i10b 1
+Z20 !s108 1635272947.000000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/rocco/Documents/practica4/componentes.vhd|
+!s107 C:/Users/rocco/Documents/practica4/componentes.vhd|
+!i113 1
+R12
+R13
+Edec_2_4
+Z21 w1631556686
+R3
+R4
+R0
+Z22 8C:/Users/rocco/Documents/practica4/dec_2_4/dec_2_4.vhd
+Z23 FC:/Users/rocco/Documents/practica4/dec_2_4/dec_2_4.vhd
+l0
+L4
+V_3NcIGJi35:<Fm<VZf=I31
+!s100 D9W=@DIlUR2K5gJ4FE1ZW2
+R7
+31
+R8
+!i10b 1
+R9
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/rocco/Documents/practica4/dec_2_4/dec_2_4.vhd|
+Z25 !s107 C:/Users/rocco/Documents/practica4/dec_2_4/dec_2_4.vhd|
+!i113 1
+R12
+R13
+Abehavioural
+R3
+R4
+DEx4 work 7 dec_2_4 0 22 _3NcIGJi35:<Fm<VZf=I31
+l15
+L11
+VG=[VWSYLNP[X3l7GO]OQh3
+!s100 e7PCLIZJicbJMKCgFMzK32
+R7
+31
+R8
+!i10b 1
+R9
+R24
+R25
+!i113 1
+R12
+R13
+Egenerador
+Z26 w1635272653
+R2
+R3
+R4
+R0
+Z27 8C:/Users/rocco/Documents/practica4/generador/generador.vhd
+Z28 FC:/Users/rocco/Documents/practica4/generador/generador.vhd
+l0
+L5
+V1gmo5dW][@iUzX^UY=S452
+!s100 =LTMg`3?fOkcL5;A[7m[10
+R7
+31
+R8
+!i10b 1
+R9
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/rocco/Documents/practica4/generador/generador.vhd|
+Z30 !s107 C:/Users/rocco/Documents/practica4/generador/generador.vhd|
+!i113 1
+R12
+R13
+Abehavioural
+R2
+R3
+R4
+DEx4 work 9 generador 0 22 1gmo5dW][@iUzX^UY=S452
+l23
+L19
+VQ@i?:1DLH29MRU0ha<L0>1
+!s100 [Mi8=JZLEGAON?^VR1XmI0
+R7
+31
+R8
+!i10b 1
+R9
+R29
+R30
+!i113 1
+R12
+R13
+Emux_4_1
+Z31 w1634676228
+R3
+R4
+R0
+Z32 8C:/Users/rocco/Documents/practica4/mux_4_1/mux_4_1.vhd
+Z33 FC:/Users/rocco/Documents/practica4/mux_4_1/mux_4_1.vhd
+l0
+L4
+V7=1TF2<=8B<6]kS]BiQT@3
+!s100 ]?]=`@5I1`L2za3HOfI_60
+R7
+31
+R8
+!i10b 1
+R9
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/rocco/Documents/practica4/mux_4_1/mux_4_1.vhd|
+Z35 !s107 C:/Users/rocco/Documents/practica4/mux_4_1/mux_4_1.vhd|
+!i113 1
+R12
+R13
+Abehavioural
+R3
+R4
+DEx4 work 7 mux_4_1 0 22 7=1TF2<=8B<6]kS]BiQT@3
+l12
+L11
+VN[P2a:RXVQWhbYge1N?fO3
+!s100 5eGbI5FNC5<JGMUQI<@=]0
+R7
+31
+R8
+!i10b 1
+R9
+R34
+R35
+!i113 1
+R12
+R13
+Epractica4
+Z36 w1634676420
+Z37 DPx4 work 11 componentes 0 22 lV7E8m3hZP`oScfF>7Z6F1
+R3
+R4
+R0
+Z38 8C:/Users/rocco/Documents/practica4/practica4.vhd
+Z39 FC:/Users/rocco/Documents/practica4/practica4.vhd
+l0
+L5
+VnWE>`=DBM^9bi^[edAY2Q2
+!s100 [7RiUDbXl2;6F5oFEP99U2
+R7
+31
+R19
+!i10b 1
+R20
+Z40 !s90 -reportprogress|300|-93|-work|work|C:/Users/rocco/Documents/practica4/practica4.vhd|
+Z41 !s107 C:/Users/rocco/Documents/practica4/practica4.vhd|
+!i113 1
+R12
+R13
+Artl
+R37
+R3
+R4
+DEx4 work 9 practica4 0 22 nWE>`=DBM^9bi^[edAY2Q2
+l30
+L22
+Vmnj`3dC1jld`CA9TGH6;I2
+!s100 __oJk:Zm9`[zoI]6963iB0
+R7
+31
+R19
+!i10b 1
+R20
+R40
+R41
+!i113 1
+R12
+R13
