@@ -1,0 +1,431 @@
+Analysis & Synthesis report for quiz4
+Tue Nov 23 23:25:33 2021
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Nov 23 23:25:33 2021       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; quiz4                                       ;
+; Top-level Entity Name              ; quiz4                                       ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 63                                          ;
+;     Total combinational functions  ; 63                                          ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 82                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE22F17C6       ;                    ;
+; Top-level entity name                                            ; quiz4              ; quiz4              ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                    ;
++----------------------------------+-----------------+-----------------+------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path             ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------+---------+
+; quiz4.vhd                        ; yes             ; User VHDL File  ; C:/Users/rocco/Documents/quiz4/quiz4.vhd ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------+---------+
+
+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimated Total logic elements              ; 63       ;
+;                                             ;          ;
+; Total combinational functions               ; 63       ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 0        ;
+;     -- 3 input functions                    ; 59       ;
+;     -- <=2 input functions                  ; 4        ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 63       ;
+;     -- arithmetic mode                      ; 0        ;
+;                                             ;          ;
+; Total registers                             ; 0        ;
+;     -- Dedicated logic registers            ; 0        ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 82       ;
+;                                             ;          ;
+; Embedded Multiplier 9-bit elements          ; 0        ;
+;                                             ;          ;
+; Maximum fan-out node                        ; Equal0~0 ;
+; Maximum fan-out                             ; 16       ;
+; Total fan-out                               ; 331      ;
+; Average fan-out                             ; 1.46     ;
++---------------------------------------------+----------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |quiz4                     ; 63 (63)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 82   ; 0            ; |quiz4              ; quiz4       ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; y1[0]$latch                                         ; Equal0              ; yes                    ;
+; y1[1]$latch                                         ; Equal0              ; yes                    ;
+; y1[2]$latch                                         ; Equal0              ; yes                    ;
+; y1[3]$latch                                         ; Equal0              ; yes                    ;
+; y1[4]$latch                                         ; Equal0              ; yes                    ;
+; y1[5]$latch                                         ; Equal0              ; yes                    ;
+; y1[6]$latch                                         ; Equal0              ; yes                    ;
+; y1[7]$latch                                         ; Equal0              ; yes                    ;
+; y1[8]$latch                                         ; Equal0              ; yes                    ;
+; y1[9]$latch                                         ; Equal0              ; yes                    ;
+; y1[10]$latch                                        ; Equal0              ; yes                    ;
+; y1[11]$latch                                        ; Equal0              ; yes                    ;
+; y1[12]$latch                                        ; Equal0              ; yes                    ;
+; y1[13]$latch                                        ; Equal0              ; yes                    ;
+; y1[14]$latch                                        ; Equal0              ; yes                    ;
+; y1[15]$latch                                        ; Equal0              ; yes                    ;
+; y1[16]$latch                                        ; Equal0              ; yes                    ;
+; y1[17]$latch                                        ; Equal0              ; yes                    ;
+; y2[0]$latch                                         ; Equal0              ; yes                    ;
+; y2[1]$latch                                         ; Equal0              ; yes                    ;
+; y2[2]$latch                                         ; Equal0              ; yes                    ;
+; y2[3]$latch                                         ; Equal0              ; yes                    ;
+; y2[4]$latch                                         ; Equal0              ; yes                    ;
+; y2[5]$latch                                         ; Equal0              ; yes                    ;
+; y2[6]$latch                                         ; Equal0              ; yes                    ;
+; y2[7]$latch                                         ; Equal0              ; yes                    ;
+; y2[8]$latch                                         ; Equal0              ; yes                    ;
+; y2[9]$latch                                         ; Equal0              ; yes                    ;
+; y2[10]$latch                                        ; Equal0              ; yes                    ;
+; y2[11]$latch                                        ; Equal0              ; yes                    ;
+; y2[12]$latch                                        ; Equal0              ; yes                    ;
+; y2[13]$latch                                        ; Equal0              ; yes                    ;
+; y2[14]$latch                                        ; Equal0              ; yes                    ;
+; y2[15]$latch                                        ; Equal0              ; yes                    ;
+; y2[16]$latch                                        ; Equal0              ; yes                    ;
+; y2[17]$latch                                        ; Equal0              ; yes                    ;
+; y2[18]$latch                                        ; Equal0              ; yes                    ;
+; y3[0]$latch                                         ; Equal0              ; yes                    ;
+; y3[1]$latch                                         ; Equal0              ; yes                    ;
+; y3[2]$latch                                         ; Equal0              ; yes                    ;
+; y3[3]$latch                                         ; Equal0              ; yes                    ;
+; y3[4]$latch                                         ; Equal0              ; yes                    ;
+; y3[5]$latch                                         ; Equal0              ; yes                    ;
+; y3[6]$latch                                         ; Equal0              ; yes                    ;
+; y3[7]$latch                                         ; Equal0              ; yes                    ;
+; y3[8]$latch                                         ; Equal0              ; yes                    ;
+; y3[9]$latch                                         ; Equal0              ; yes                    ;
+; y3[10]$latch                                        ; Equal0              ; yes                    ;
+; y3[11]$latch                                        ; Equal0              ; yes                    ;
+; y3[12]$latch                                        ; Equal0              ; yes                    ;
+; y3[13]$latch                                        ; Equal0              ; yes                    ;
+; y4[0]$latch                                         ; y4[12]              ; yes                    ;
+; y4[1]$latch                                         ; y4[12]              ; yes                    ;
+; y4[2]$latch                                         ; y4[12]              ; yes                    ;
+; y4[3]$latch                                         ; y4[12]              ; yes                    ;
+; y4[4]$latch                                         ; y4[12]              ; yes                    ;
+; y4[5]$latch                                         ; y4[12]              ; yes                    ;
+; y4[6]$latch                                         ; y4[12]              ; yes                    ;
+; y4[7]$latch                                         ; y4[12]              ; yes                    ;
+; y4[8]$latch                                         ; y4[12]              ; yes                    ;
+; y4[9]$latch                                         ; y4[12]              ; yes                    ;
+; y4[10]$latch                                        ; y4[12]              ; yes                    ;
+; y4[11]$latch                                        ; y4[12]              ; yes                    ;
+; y4[12]$latch                                        ; y4[12]              ; yes                    ;
+; Number of user-specified and inferred latches = 64  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 82                          ;
+; cycloneiii_lcell_comb ; 63                          ;
+;     normal            ; 63                          ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 59                          ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.46                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Tue Nov 23 23:25:12 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off quiz4 -c quiz4
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file quiz4.vhd
+    Info (12022): Found design unit 1: quiz4-Behavioral File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 19
+    Info (12023): Found entity 1: quiz4 File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 5
+Info (12127): Elaborating entity "quiz4" for the top level hierarchy
+Warning (10631): VHDL Process Statement warning at quiz4.vhd(21): inferring latch(es) for signal or variable "y1", which holds its previous value in one or more paths through the process File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Warning (10631): VHDL Process Statement warning at quiz4.vhd(21): inferring latch(es) for signal or variable "y2", which holds its previous value in one or more paths through the process File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Warning (10631): VHDL Process Statement warning at quiz4.vhd(21): inferring latch(es) for signal or variable "y3", which holds its previous value in one or more paths through the process File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Warning (10631): VHDL Process Statement warning at quiz4.vhd(21): inferring latch(es) for signal or variable "y4", which holds its previous value in one or more paths through the process File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y4[0]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y4[1]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y4[2]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y4[3]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y4[4]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y4[5]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y4[6]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y4[7]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y4[8]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y4[9]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y4[10]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y4[11]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y4[12]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y3[0]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y3[1]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y3[2]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y3[3]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y3[4]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y3[5]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y3[6]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y3[7]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y3[8]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y3[9]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y3[10]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y3[11]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y3[12]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y3[13]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y2[0]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y2[1]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y2[2]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y2[3]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y2[4]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y2[5]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y2[6]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y2[7]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y2[8]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y2[9]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y2[10]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y2[11]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y2[12]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y2[13]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y2[14]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y2[15]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y2[16]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y2[17]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y2[18]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y1[0]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y1[1]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y1[2]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y1[3]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y1[4]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y1[5]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y1[6]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y1[7]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y1[8]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y1[9]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y1[10]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y1[11]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y1[12]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y1[13]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y1[14]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y1[15]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y1[16]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (10041): Inferred latch for "y1[17]" at quiz4.vhd(21) File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "y1[1]$latch" merged with LATCH primitive "y1[0]$latch" File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+    Info (13026): Duplicate LATCH primitive "y1[17]$latch" merged with LATCH primitive "y1[0]$latch" File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+    Info (13026): Duplicate LATCH primitive "y2[1]$latch" merged with LATCH primitive "y2[0]$latch" File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+    Info (13026): Duplicate LATCH primitive "y2[2]$latch" merged with LATCH primitive "y2[0]$latch" File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+    Info (13026): Duplicate LATCH primitive "y2[18]$latch" merged with LATCH primitive "y2[0]$latch" File: C:/Users/rocco/Documents/quiz4/quiz4.vhd Line: 21
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 145 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 18 input pins
+    Info (21059): Implemented 64 output pins
+    Info (21061): Implemented 63 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4782 megabytes
+    Info: Processing ended: Tue Nov 23 23:25:33 2021
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:41
+
+

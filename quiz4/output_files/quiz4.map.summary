@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Nov 23 23:25:33 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : quiz4
+Top-level Entity Name : quiz4
+Family : Cyclone IV E
+Total logic elements : 63
+    Total combinational functions : 63
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 82
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
